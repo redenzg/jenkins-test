@@ -6,6 +6,7 @@ node('master') {
         sh "mkdir /home/jenkins/app"
         sh "cd /home/jenkins/app"
         sh "git clone https://github.com/redenzg/jenkins-test.git"
-        sh "cd /home/composer install"
+        sh "cd jenkins-test"
+        sh "composer install"
     }
 }
