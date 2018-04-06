@@ -3,7 +3,7 @@
 node('master') {
     stage('say-hello') {
         sh "echo 'hello world'"
-        sh "git checkout https://github.com/redenzg/jenkins-test.git"
+        sh "git clone https://github.com/redenzg/jenkins-test.git"
         sh "composer install"
     }
 }
